@@ -1,0 +1,465 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+input,button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading{
+    border-bottom: 0.2px solid black;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0 20px 0;
+}
+
+.the{
+    font-size: 15px;
+    
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
+
+.navDiv li{
+    
+    list-style: none;
+  color: black;
+    padding: 5px 20px;
+   
+}
+.linkD{
+    text-decoration: none;
+}
+
+/* Styling of Banner Component */
+
+.bannerContainer{
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    display: flex;
+ 
+    
+}
+
+.leftBanner{
+    border: 1px solid transparent;
+    height: 95%;
+    width: 65%;
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: url('https://img.traveltriangle.com/blog/wp-content/uploads/2021/09/Historical-Places-in-the-World1.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+}
+.bannerOneTitle{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    color: white;
+}
+.secondline{
+    position: absolute;
+    left: 10%;
+    top: 78%;
+    color: rgb(219, 91, 91);
+}
+.rightBanner{
+   
+    height: 95%;
+    width: 30%;
+    margin: 10px;
+    margin-left: 10px;
+}
+#firstSBanner{
+    margin-bottom: 20px;
+    background-image: url('https://hips.hearstapps.com/hbu.h-cdn.co/assets/17/24/1497645698-index-oldest-places.jpg');
+    background-size: cover;
+    /* background-position: center;
+    background-repeat: no-repeat; */
+}
+#secondSBanner{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dG-rTEnMkgCnN70BjYmUsO-gYN6iNR9bXqto_z0qIRoatdH7FF-gpQPQzf-OD9uxk_w&usqp=CAU');
+    background-size: cover;
+    /* background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.rightSubBanner{
+ 
+    border-radius: 10px;
+    width: 100%;
+    height: 48%;
+    
+}
+
+.bollyContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+}
+
+.leftContained{
+    width: 70%;
+    padding-right: 50px;
+    
+    
+}
+.bollyTitle{
+    margin-top: 50px;
+    width: fit-content;
+    border-bottom: 2px solid tomato;
+}
+.cardContained{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 50px 30px; 
+}
+
+.cardContained>img{
+    width: 45%;
+    height: 300px;
+    border-radius: 15px;
+}
+.cardContents{
+    width: 55%;
+    
+    padding-left: 20px;
+    position: relative;
+}
+.newsTitle{
+    
+    margin: 10px 0;
+}
+.newsContent{
+    
+    height: 135px;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+   
+   
+}
+.readMore{
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+.dateIssue{
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+.rightContained{
+    width: 30%;
+    /* height: 500px; */
+    
+    padding-left: 30px;
+    
+}
+.cardContaining{
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+    border-bottom: 2px solid black;
+}
+.topCardImg{
+    width: 500px;
+    height: 200px;
+   
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 15px;
+    
+}
+.topCardImg>img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-left: -50px;
+    border-radius: 10px;
+}
+
+.topCardContents{
+    
+    position: relative;
+}
+.topNewsTitle{
+   
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+    font-size: 17px;
+}
+.topReadMore{
+    float: right;
+}
+
+.topDateIssue{
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* Styling for Mobile View adding media Queries */
+
+@media only screen and (max-width: 600px){
+    .bollyContainer{
+        flex-direction: column;
+    }
+
+    .leftContained{
+        width: 100%;
+    }
+    .newsContent{
+        display: none;
+    }
+
+    .rightContained{
+        width: 90%;
+    }
+
+}
+
+
+
+/* styling of headline of articles */
+
+.headLine{
+    margin: auto;
+    border-bottom: 5px solid tomato;
+    width: fit-content;
+    padding: 20px ;
+    margin-bottom: 3rem;
+    
+}
+
+.blogItem-link{
+    text-decoration: none;
+    color:#000  ;
+}
+
+
+
+
+
+
+
+
+/* Styling for Mobile View */
+
+
+@media only screen and (max-width: 600px){
+	
+    .navDiv{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .linkD{
+        margin-bottom: 10px;
+    }
+
+    .bannerContainer{
+        flex-direction: column;
+    }
+
+    .leftBanner{
+        width: 95%;
+    }
+    .rightBanner{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.cardContainer{
+    width: 90%;
+    min-height: 25rem;
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.card{
+    width: 20rem;
+    height: 25rem;
+    
+}
+.card> img{
+    height: 60%;
+    width: 100%;
+    border-radius: 15px;
+}
+.cardTitle{
+  
+    height: 30%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.dateTitle
+{
+    margin: 5px 8px;
+}
+
+
+/* Styling for Mobile View Adding media Queries */
+
+
+@media only screen and (max-width: 600px){
+
+    .cardContainer{
+        width: 95%;
+        flex-direction: column;
+    }
+    .card{
+        width: 26rem;
+    }
+
+}
+
+
+
+
+/* homepage sidebar designes */
+
+.mainContainer{
+    margin: auto;
+    width: 85%;
+    height: 1200px;
+    /* border-top: 2px solid ; */
+    padding-top: 40px;
+    margin-top: 20px;
+    display: flex;
+}
+.leftContainer{
+    width: 70%;
+    height: 100%;
+    
+    
+}
+.ritContainer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.headingArt{
+    /* margin: auto; */
+    border-bottom: 1px solid black;
+    width: fit-content;
+    padding: 10px ;
+    margin-bottom: 10px;
+    font-size: 30px;
+    
+}
+
+.advertise{
+    border: 1px solid black;
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardArticle{
+    width: 90%;
+    height: 22%;
+    
+    margin-bottom: 18px;
+    display: flex;
+}
+.cardArticle>img{
+    width: 45%;
+    height: 100%;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.discr{
+    width: 55%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titleDisc{
+    width: 100%;
+    height: 60%;
+   font-size: 20px;
+    overflow: hidden;
+}
+
+
+
+/* Styling for Mobile view adding Media Queries */
+
+@media only screen and (max-width: 600px){
+    .leftContainer{
+        width: 95%;
+    }
+    .ritContainer{
+        display: none;
+    }
+}
+
+
+
+/* Footer */
+.foots{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 50;
+    color: #fff;
+    margin: 50px 0 20px 0;
+}
